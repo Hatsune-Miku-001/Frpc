@@ -1,11 +1,10 @@
 package com.lucloud.frpc;
 
-import android.os.Build;
-import android.content.Intent;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
@@ -86,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void startFrpDownload() {
         // 使用系统方式下载frpc
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("下载链接"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Hatsune-Miku-001/Frpc/raw/main/frpc"));
         startActivity(browserIntent);
     }
 
